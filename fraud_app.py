@@ -11,7 +11,16 @@ from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, r
 from sklearn.preprocessing import StandardScaler
 
 # ==========================================
-# 0. LIBRARY CHECK (Imbalanced-Learn)
+# 1. PAGE CONFIGURATION (MUST BE FIRST & ONLY ONCE)
+# ==========================================
+st.set_page_config(
+    page_title="🛡️ Fraud Detection System", 
+    layout="wide", 
+    initial_sidebar_state="expanded"
+)
+
+# ==========================================
+# 0. LIBRARY CHECK
 # ==========================================
 try:
     from imblearn.over_sampling import SMOTE, RandomOverSampler
@@ -21,9 +30,9 @@ except ImportError:
     IMBLEARN_AVAILABLE = False
 
 # ==========================================
-# 1. PAGE CONFIGURATION & UI SETUP
+# 2. UI SETUP
 # ==========================================
-st.set_page_config(page_title="🛡️ Fraud Detection System", layout="wide", initial_sidebar_state="expanded")
+# DELETE THE SECOND st.set_page_config HERE
 
 st.title("🛡️ Credit Card Fraud Detection Dashboard")
 st.markdown("""
