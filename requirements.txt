@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 streamlit
 pandas
 numpy
-seaborn
 matplotlib
-=======
-streamlit
-pandas
-numpy
 seaborn
-matplotlib
->>>>>>> 34c0fdac733265e90666494be0c37f25730a80a8
 scikit-learn
+imbalanced-learn
